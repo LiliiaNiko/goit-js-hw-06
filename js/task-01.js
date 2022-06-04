@@ -5,6 +5,8 @@ const titleEl = document.querySelectorAll('h2');
 
 categoriesListEl.forEach(titleEl => {
     console.log(`Category: ${titleEl.firstElementChild.textContent}`);
-    const value = titleEl.querySelectorAll('li');
-    console.log(`Elements: ${value.length}`);
+    const value = titleEl.lastElementChild;
+    console.log(`Elements: ${value.children.length}`);
+
+    //console.log(value);
 });
